@@ -10,9 +10,9 @@ The data was derived through the Prompt Engineering. Here's my prompt using Goog
 
 # Methodology
 ## Python
-Load the .csv file with Google Colab. I initially inspected the whole sheet using the .info() where I found missing values from the columns. Assumed that since there were no values in the cell, I went ahead and filled it out with "0".
-
-TO BE CONTINUED
+With the use of Google Colab, I loaded the .csv file and initially inspected the whole sheet using the .info() where I found missing values from the columns. Assumed that since there were no values in the cell, I went ahead and filled it out with "0". I also changed the data types on some columns and transformed the 'district' and 'sub_district' columns into its proper form. After that, I exported a transformed data into an .xlsx file.
+## Excel
+## Power BI
 
 
 # Insights
