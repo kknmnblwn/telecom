@@ -1,5 +1,5 @@
 # Problem Statement
-Which geographic clusters in Davao City suffer from the highest network degradation during peak hours (6 PM – 11 PM), and which sub-districts should be prioritized for Fiber-to-the-Home (FTTH) infrastructure upgrades based on projected ROI?
+Identify high-stress geographic service areas in Davao City experiencing network reliability issues during peak hours (6:00 PM – 11:00 PM) to minimize customer churn and optimize capital allocation for infrastructure upgrades.
 
 # Data
 The data was derived through the Prompt Engineering. Here's my prompt using Google Gemini.
