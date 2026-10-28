@@ -1,3 +1,7 @@
+# Davao City Internet Service: Peak-Hour Analysis
+
+# Project Summary
+
 # Problem Statement
 Identify high-stress geographic service areas in Davao City experiencing network reliability issues during peak hours (6:00 PM – 11:00 PM) to minimize customer churn and optimize capital allocation for infrastructure upgrades.
 
