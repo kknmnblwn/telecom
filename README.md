@@ -1,6 +1,5 @@
 # Davao City Internet Service: Peak-Hour Analysis
-<img width="2500" height="1364" alt="9A833FC3-76C1-48FD-B520-57D2182134B3" src="https://github.com/user-attachments/assets/371a6945-664b-4947-a813-0d9494899ab8" />
-
+<img width="2494" height="1362" alt="59580AAC-DDC8-43EF-9BBA-E19CC2DEB688" src="https://github.com/user-attachments/assets/778b3679-51ef-41a9-85f4-b9b042bffb98" />
 
 # Project Summary
 This project studies the peak-hour internet service (IS) performance in the most populated districts in Davao City. This aims to aide our local internet service providers (ISPs) to repurpose, if needed, their upgrade budget allocation.
