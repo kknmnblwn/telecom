@@ -26,14 +26,17 @@ Used Excel to clean data in the dataset that was not easily visible through Goog
 I used this tool for the data storytelling and in making the final dashboard.
 
 # Key Insights
-<img width="1200" height="655" alt="F2C5EF07-7D00-4B78-B3F0-F9A93651E4B1_1_105_c" src="https://github.com/user-attachments/assets/eb5afb2e-ec06-4abb-af8d-f08b384a1a82" />
-In a span of three (3) years, a trend of increasing number in complaint tickets were noted across the seven (7) districts in Davao City.
+<br><img width="1200" height="655" alt="F2C5EF07-7D00-4B78-B3F0-F9A93651E4B1_1_105_c" src="https://github.com/user-attachments/assets/eb5afb2e-ec06-4abb-af8d-f08b384a1a82" />
+In a span of three (3) years, a trend of increasing number in complaint tickets were noted across the seven (7) districts in Davao City.</br>
 
-<img width="1254" height="626" alt="C7AB7F32-D393-4F04-9AD3-8C25FAB07E3D_1_105_c" src="https://github.com/user-attachments/assets/8b69af3b-8230-4351-b303-1ce81ad8debb" />
-When compared with the total Outage Duration (in milliseconds) per District, <b>Talomo and Buhangin Districts were two of the highest Outage Duration and Complaint Tickets Logged.</b> Although <b>Agdao District is ranked 5th in Outage Duration, its Complaint Ticket Logged was the 3rd highest.</b>
+<br><img width="1254" height="626" alt="C7AB7F32-D393-4F04-9AD3-8C25FAB07E3D_1_105_c" src="https://github.com/user-attachments/assets/8b69af3b-8230-4351-b303-1ce81ad8debb" />
+When compared with the total Outage Duration (in milliseconds) per District, <b>Talomo and Buhangin Districts were consistently two of the highest. Ranking 3rd in the highest Outage Duration, yet, lower compared to the other districts in Complaint Tickets Logged is the Poblacion District.</b> Although <b>Agdao District is ranked 5th in Outage Duration, its Complaint Ticket Logged was the 3rd highest.</b></br>
 
-<img width="1694" height="792" alt="B673879F-EED6-4958-8155-B9EDAD5E922B" src="https://github.com/user-attachments/assets/9850a9df-bdd0-425a-8bed-d894fea337a5" />
-As per 
+<br><img width="1694" height="792" alt="B673879F-EED6-4958-8155-B9EDAD5E922B" src="https://github.com/user-attachments/assets/9850a9df-bdd0-425a-8bed-d894fea337a5" />
+One of the contributors for these complaint tickets is the <b>Bandwidth Utilization (%)</b>. Having at least 85% BW Util means that the highway where cars (data) pass by from point A to B is 85% full!</br>
 
+<br><img width="1296" height="606" alt="EF78FBA5-F65F-45FE-A065-AA3EE24ED148_1_105_c" src="https://github.com/user-attachments/assets/083bf4ee-dd6a-4c43-a158-63e62a9fbd82" />
+Continuing with the highway analogy, latency (measured in milliseconds) is the travel time of a single car to travel from your device to the destination server and back. <b>In this case, the districts Talomo, Buhangin and Poblacion experience the longest average latency.</b>
+</br>
 
 # Recommendations
