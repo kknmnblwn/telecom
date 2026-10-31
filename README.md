@@ -39,3 +39,10 @@ Continuing with the highway analogy, latency (measured in milliseconds) is the t
 </br>
 
 # Recommendations
+## Month 1
+1. <b>Identify the top worst-performing nodes.</b> ISP will now have to drill down the worst-performing nodes in the districts of Talomo, Buhangin and Poblacion.
+2. <b>ISP to adjust bandwidth allocation.</b>
+## Month 2
+1. <b>Physical upgrade execution and migration.</b> Offload congested nodes to high-capacity FTTH infrastructure.
+## Month 3
+1. <b>Post-implementation impact analysis.</b> Latency should already be reduced to <20ms and peak bandwidth utilization is below 85%.
