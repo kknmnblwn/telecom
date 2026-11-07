@@ -1,5 +1,5 @@
 # Davao City Internet Service: Peak-Hour Analysis
-<img width="2494" height="1362" alt="59580AAC-DDC8-43EF-9BBA-E19CC2DEB688" src="https://github.com/user-attachments/assets/778b3679-51ef-41a9-85f4-b9b042bffb98" />
+<img width="2502" height="1352" alt="F10F46A6-13C6-47CD-AAE0-27391D645220" src="https://github.com/user-attachments/assets/5b63b05a-24a1-4279-9efb-4da13e7a7603" />
 
 # Project Summary
 This project studies the peak-hour internet service (IS) performance in the most populated districts in Davao City. This aims to aide our local internet service providers (ISPs) to repurpose, if needed, their upgrade budget allocation.
@@ -16,11 +16,23 @@ The data was derived through the Prompt Engineering. Here's my prompt using Goog
 
 # Methodology
 ## Python
-With the use of Google Colab, I loaded the .csv file and initially inspected the whole sheet using the .info() where I found missing values from the columns. Since I found some blank cells, I assumed they have no data for it so I filled it out with "0". I also changed the data types on some columns and transformed the 'district' and 'sub_district' columns into its proper form. After that, I exported a transformed data into an .xlsx file.
+With the use of Google Colab, I loaded the .csv file and initially inspected the whole sheet using the .info() where I found missing values from the columns. Since I found some blank cells, I assumed they have no data for it so I filled it out with "0". I also changed the data types on some columns and transformed the <i>district</i> and <i>sub_district</i> columns into its proper form. After that, I exported a transformed data into an .xlsx file.
 
 ## Excel
-Used Excel to clean data in the dataset that was not easily visible through Google Colab (Python). I've also utilized Excel's Pivot Table just to prepare the data that I wanted to be visualized through Power BI.
+After initially inspecting and transforming the dataset through Google Colab (Python), I checked the whole file using Excel. Here are the following changes/manipulations I did using MS Excel.
+1. Deleting all rows containing the "Off-Peak (00:00-17:00)" from the <i>time_window column</i>.
+<br><img width="573" height="200" alt="8C781EA8-DFB1-4A74-8E11-E4815045CD84" src="https://github.com/user-attachments/assets/fcbed60b-4711-4efa-b21c-493bc6068967" /></br>
+Since I've set the limitation of this Portfolio into "Peak Hours" only, I will not be needing the data from the "Off-Peak".
+2. Double-checking the columns <i>district</i> and <i>sub_district</i>.
+<br><img width="302" height="343" alt="C46CA56A-4BF6-4159-A4A0-E2D8850D976C" src="https://github.com/user-attachments/assets/9a686be1-f6eb-4c90-afba-ae434b6d6cd8" /></br>
+I realized later while I was editing my dashboard <i>(whenever I click Talomo District, the Buhangin Area was always lingering at the topmost part of my Map visualization! I thought something was wrong with my map)</i> that the Buhangin Proper was grouped under "Talomo District". Had I not been a resident of this city, I wouldn't know that Buhangin Proper <b>should</b> have been under "Buhangin District" and so I changed in Excel.
+3. Pivot Table
+<br><img width="618" height="415" alt="4D119455-A894-4366-8866-5FA43C01438B" src="https://github.com/user-attachments/assets/59dec073-d21c-41e5-9d6f-93fd0bc952da" /></br>
+<i><br>A little back story... lol</i></br>
+I have a love-hate relationship with Pivot Table, to be honest, when I just first learned about it as a Team Leader. I didn't understood how to do it at first but when I figured out how it can make my life easy <i>(goodbye filters and sort!)</i>, I pushed harder to make it easy for myself.
 
+Sure, it would be much easier for AI to make me a step-by-step instruction on how to build my own dashboard. But I figured that if I continued with it, I wouldn't even know how to explain the details and numbers on my dashboard. So I asked myself, <b>"In the years that I have been working in the Telecommunication industry, what were the usual questions they ask me during a meeting/report?"</b> This was how I started drafting Pivot Tables in Excel. 
+# CONTINUE HERE #
 ## Power BI
 I used this tool for the data storytelling and in making the final dashboard.
 
