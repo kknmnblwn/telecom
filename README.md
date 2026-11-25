@@ -17,26 +17,12 @@ The data was derived through the Prompt Engineering. Here's my prompt using Goog
 ## Python
 Although my strongest suit in data cleaning and manipulation was MS Excel, I realized that I <i>need</i> to do it with Python in Google Colab despite being intimidated with it at first.
 
-I loaded the .csv file and initially inspected the whole sheet using the .info() where I found missing values from the columns. Since I found some blank cells, I assumed they have no data for it so I filled it out with "0". I also changed the data types on some columns and transformed the <i>district</i> and <i>sub_district</i> columns into its proper form. After that, I exported a transformed data into an .xlsx file.
+<img width="2722" height="1284" alt="908FCB5E-D096-4F3B-A731-F490A8C9C76B" src="https://github.com/user-attachments/assets/60c0f0e6-002d-4bfc-bb8d-d33d9692d9db" />
+I loaded the .csv file and initially inspected the whole sheet using the .info().
+<img width="2726" height="1312" alt="063E4563-B8BB-4133-9A3E-933D7D235B69" src="https://github.com/user-attachments/assets/5c352ce0-7c19-4ff1-894e-ae2cc29c638e" />
+I've initially checked the data types and decide whether it's correct. Having observed that the <i>log_date</i> was set as an <i>object</i>, I changed it into <i>datetime</i> data type. 
 
-## Excel
-After initially inspecting and transforming the dataset through Google Colab (Python), I checked the whole file using Excel. Here are the following changes/manipulations I did using MS Excel.
-1. Deleting all rows containing the "Off-Peak (00:00-17:00)" from the <i>time_window column</i>.
-<br><img width="573" height="200" alt="8C781EA8-DFB1-4A74-8E11-E4815045CD84" src="https://github.com/user-attachments/assets/fcbed60b-4711-4efa-b21c-493bc6068967" /></br>
-Since I've set the limitation of this Portfolio into "Peak Hours" only, I will not be needing the data from the "Off-Peak".
-2. Double-checking the columns <i>district</i> and <i>sub_district</i>.
-<br><img width="302" height="343" alt="C46CA56A-4BF6-4159-A4A0-E2D8850D976C" src="https://github.com/user-attachments/assets/9a686be1-f6eb-4c90-afba-ae434b6d6cd8" /></br>
-I realized later while I was editing my dashboard <i>(whenever I click Talomo District, the Buhangin Area was always lingering at the topmost part of my Map visualization! I thought something was wrong with my map)</i> that the Buhangin Proper was grouped under "Talomo District". Had I not been a resident of this city, I wouldn't know that Buhangin Proper <b>should</b> have been under "Buhangin District" and so I changed it in Excel.
-3. Finalizing the data per column.
-<br>This is important to check since there were values in a column that wouldn't make sense. This was clearly overlooked when I did this file with Python. An example of this would be having a -99% packet loss and average latency (measured in milliseconds) of 9999.</br>
-<img width="100" height="528" alt="169E8C5B-47CC-4852-BBC7-DB5F457300F5_4_5005_c" src="https://github.com/user-attachments/assets/b31c67b6-123f-4736-8f02-dd4a9f2dfd85" />
 
-<img width="91" height="595" alt="19257C82-2C3D-4CD1-9B54-BF5A2782A8C1_4_5005_c" src="https://github.com/user-attachments/assets/ad355c28-51d9-4096-9874-2e43db745922" />
-
-5. Pivot Table
-<br><img width="618" height="415" alt="4D119455-A894-4366-8866-5FA43C01438B" src="https://github.com/user-attachments/assets/59dec073-d21c-41e5-9d6f-93fd0bc952da" /></br>
-<i><br>A little back story... lol</i></br>
-I have a love-hate relationship with Pivot Table, to be honest, when I just first learned about it in my previous role as a Team Leader. I didn't understood how to do it at first but when I figured out how it can make my life easy <i>(goodbye filters and sort!)</i>, I pushed harder to make it easy for myself. So this was the very foundation of how my Power BI dashboard came to be.
 
 ## Power BI
 I used this tool for the data storytelling and in making the final dashboard. Sure, it would be much easier for AI to make me a step-by-step instruction on the contents of my own dashboard. But I figured that if I continued on with it, I wouldn't even know how to explain the details and numbers on my dashboard. So I asked myself, <b>"In the years that I have been working in the Telecommunication industry, what were the usual questions they ask me during a meeting/report?"</b>
