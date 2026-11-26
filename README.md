@@ -17,11 +17,26 @@ The data was derived through the Prompt Engineering. Here's my prompt using Goog
 ## Python
 Although my strongest suit in data cleaning and manipulation was MS Excel, I realized that I <i>need</i> to do it with Python in Google Colab despite being intimidated with it at first.
 
-<img width="2722" height="1284" alt="908FCB5E-D096-4F3B-A731-F490A8C9C76B" src="https://github.com/user-attachments/assets/60c0f0e6-002d-4bfc-bb8d-d33d9692d9db" />
+<br><img width="2722" height="1284" alt="908FCB5E-D096-4F3B-A731-F490A8C9C76B" src="https://github.com/user-attachments/assets/60c0f0e6-002d-4bfc-bb8d-d33d9692d9db" /></br>
 I loaded the .csv file and initially inspected the whole sheet using the .info().
-<img width="2726" height="1312" alt="063E4563-B8BB-4133-9A3E-933D7D235B69" src="https://github.com/user-attachments/assets/5c352ce0-7c19-4ff1-894e-ae2cc29c638e" />
-I've initially checked the data types and decide whether it's correct. Having observed that the <i>log_date</i> was set as an <i>object</i>, I changed it into <i>datetime</i> data type. 
 
+<br><img width="2726" height="1312" alt="063E4563-B8BB-4133-9A3E-933D7D235B69" src="https://github.com/user-attachments/assets/5c352ce0-7c19-4ff1-894e-ae2cc29c638e" /></br>
+I've initially checked the data types and decided whether it's correct. Having observed that the <i>log_date</i> was set as an <i>object</i>, I changed it into <i>datetime</i> data type. There had been a couple of instances throughout my data cleaning and manipulation that I have set the proper data type for a column.
+
+<br><img width="2746" height="1026" alt="4B17DCF9-451B-413D-AA8D-E21F300737F1" src="https://github.com/user-attachments/assets/5827655f-c2fd-414e-9233-775db3d838f2" /></br>
+Since I have limited my project into the "Peak (18:00-23:00)" only, I filtered out of the file rows with values "Off-Peak (00:00-17:00)" from the <i>time_window</i> column. This has reduced the number of rows <b>from 26,280 to 13,795</b>.
+
+<br><img width="2746" height="1138" alt="CE660E8F-81AA-418B-BFD5-C45EC0C61954" src="https://github.com/user-attachments/assets/79afe7a1-ce8e-43d7-8623-beddf6195065" />
+<img width="2722" height="1342" alt="84AB748A-B707-4F3F-A93E-93E6529811A0" src="https://github.com/user-attachments/assets/e583820b-fa3c-45e9-9649-f510e10db1d1" /></br>
+For the <i>packet_loss_pct</i> column, I inspected the whole column with <i>.describe()</i> which helped me check important values contained within that column. With it, I found out that there were <b>values with -99.00</b> which might be due to a glitch in the sensor. By knowing the average packet loss, I <b>replaced the negative values with 4.25 (average packet loss value)</b> while retaining all other values within that column.
+
+<br><img width="2722" height="1344" alt="0864F5CB-0F21-4309-A68E-A8E7510EA7A3_1_201_a" src="https://github.com/user-attachments/assets/0b737b7b-fd71-42b0-9028-6476a84cb8bc" /></br>
+For the columns <i>district</i> and <i>sub_district</i>, I set the values into a <b>proper noun</b>. With the help of Google Gemini, I found out that the equivalent of <i><b>=PROPER(cell)</i></b> in Excel is <i><b>.str.title()</i></b>. So I then made sure to check the unique values with the <i>Print()</i> function.
+
+After transforming the values in both columns in the dataset, I proceeded to sort the <i>sub_district</i> according to its <i>district</i>. We can see in the highlighted box that <b>a part of the Buhangin Proper was labeled under Talomo District</b>.
+
+To correct this error, I <b>renamed the values with Talomo District to Buhangin.</b> To double check if there's still some mislabeled district, I used the code <i>df.groupby('district')['sub_district'].unique().to_frame()</i> to help me check.
+<img width="2732" height="838" alt="9CF7FD6F-1D5B-49E5-878C-032FC8BA4333" src="https://github.com/user-attachments/assets/56b37e94-006b-4be1-b79d-6974d4f1474a" />
 
 
 ## Power BI
